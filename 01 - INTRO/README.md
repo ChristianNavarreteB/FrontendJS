@@ -2,8 +2,9 @@
 
 - **Practicas:**
 
-  - [Toma de requerimientos](./1.-Requerimientos.pdf)
-  - [Buyer persona](./2.-buyerPersona.md)
-  - [Publico objetivo](./3.-publicoObjetivo.md)
-  - [Wireframe UX](./4.-wireframe.md)
-  - [UI](./5.-ui.md)
+  - [Toma de requerimientos](./Requerimientos.pdf)
+  - [Buyer persona](./BuyerPersona.pdf)
+  - [Publico objetivo](.PublicoObjetivo.jpg)
+  - [Wireframe UX](.Wireframe.jpg)
+  - [UI Desktop](./UIDesktop.png)
+  - [UI Smartphone](./UIPhone.png)
