@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 40%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(129, 179, 226);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #9cd5f0;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/img/Logomundo.png" alt="Pastilaxia" width="150px">
+      
+        <h1>Pedidos</h1>
+    </header>
+    <section>
+    <nav>
+        <form action="pedido.js">
+            <label for="Nombre">Ingresa tu nombre:</label><br>
+            <input type="text" id="Nombre" placeholder="Nombre">
+            
+            <br><br>
+
+            <label for="telefono">Ingresa tu teléfono:</label><br>
+            <input type="tel" name="telefono" id="telefono" maxlength="10" placeholder="Teléfono">
+
+            <br><br>
+
+            <label for="correo">Ingresa tu correo electrónico: </label><br>
+            <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+
+            <br><br>
+
+            <label for="Descripcion">Ingresa la descripción que desea del pastel:</label><br>
+            <input type="text" id="Descripcion" placeholder="Descripción">
+    </nav>
+        
+    <article>
+            <p>¿Cuántos pasteles y de que sabor?</p>
+
+            <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+            <label for="chocolate">Pastel de chocolate</label>
+            <input type="number" id="chocolateCuantos" name="chocolateCuantos" placeholder="Cuántos?">
+            <label for="adorno1">¿Con qué adorno?</label>
+            <select name="adorno1" id ="adorno1">
+                <option value="fruta">Fruta</option>
+                <option value="brillo">Brillo comestible</option>
+                <option value="fondan">Fondan</option>
+                <option value="trufas">Trufas</option>
+                <option value="confiteria">Confitería</option>
+                <option value="chantilly">Chantilly</option>
+            </select><br>
+
+            <input type="checkbox" id="queso" name="queso" value="queso">
+            <label for="queso">Pastel de queso</label>
+            <input type="number" id="quesoCuantos" name="quesoCuantos" placeholder="Cuántos?">
+            <label for="adorno2">¿Con qué adorno?</label>
+            <select name="adorno2" id ="adorno2">
+                <option value="fruta">Fruta</option>
+                <option value="brillo">Brillo comestible</option>
+                <option value="fondan">Fondan</option>
+                <option value="trufas">Trufas</option>
+                <option value="confiteria">Confitería</option>
+                <option value="chantilly">Chantilly</option>
+            </select><br>
+
+            <input type="checkbox" id="chocoflan" name="chocoflan" value="chocoflan">
+            <label for="chocoflan">Chocoflan</label>
+            <input type="number" id="chocoflanCuantos" name="chocoflanCuantos" placeholder="Cuántos?">
+            <label for="adorno3">¿Con qué adorno?</label>
+            <select name="adorno3" id ="adorno3">
+                <option value="fruta">Fruta</option>
+                <option value="brillo">Brillo comestible</option>
+                <option value="fondan">Fondan</option>
+                <option value="trufas">Trufas</option>
+                <option value="confiteria">Confitería</option>
+                <option value="chantilly">Chantilly</option>
+            </select><br>
+
+            <input type="checkbox" id="envinado" name="envinado" value="envinado">
+            <label for="envinado">Pastel envinado</label>
+            <input type="number" id="envinadoCuantos" name="envinadoCuantos" placeholder="Cuántos?">
+            <label for="adorno4">¿Con qué adorno?</label>
+            <select name="adorno4" id ="adorno4">
+                <option value="fruta">Fruta</option>
+                <option value="brillo">Brillo comestible</option>
+                <option value="fondan">Fondan</option>
+                <option value="trufas">Trufas</option>
+                <option value="confiteria">Confitería</option>
+                <option value="chantilly">Chantilly</option>
+            </select><br>
+
+            <input type="checkbox" id="fresa" name="fresa" value="fresa">
+            <label for="fresa">Pastel de fresa</label>
+            <input type="number" id="fresaCuantos" name="fresaCuantos" placeholder="Cuántos?">
+            <label for="adorno5">¿Con qué adorno?</label>
+            <select name="adorno5" id ="adorno5">
+                <option value="fruta">Fruta</option>
+                <option value="brillo">Brillo comestible</option>
+                <option value="fondan">Fondan</option>
+                <option value="trufas">Trufas</option>
+                <option value="confiteria">Confitería</option>
+                <option value="chantilly">Chantilly</option>
+            </select><br>
+
+            <input type="checkbox" id="tres" name="tres" value="tres">
+            <label for="tres">Pastel de tres leches</label>
+            <input type="number" id="tresCuantos" name="tresCuantos" placeholder="Cuántos?">
+            <label for="adorno6">¿Con qué adorno?</label>
+            <select name="adorno6" id ="adorno6">
+                <option value="fruta">Fruta</option>
+                <option value="brillo">Brillo comestible</option>
+                <option value="fondan">Fondan</option>
+                <option value="trufas">Trufas</option>
+                <option value="confiteria">Confitería</option>
+                <option value="chantilly">Chantilly</option>
+            </select>
+
+            <br><br>
+
+    </article>
+    </section>
+        <footer>
+            <input type="reset">
+            <input type="submit">
+            <a href="./Pasteleria.html">
+                <input type="button" value="Regresar">
+            </a>
+            <br><br>
+            <p>Dirección: Calle Saturno, Número 2000, Colonia Sistema Solar, Alcaldía Galaxia</p>
+            <p>Número: (55) 1234-9876</p>
+            <p>Horarios de atención: Lunes a Domingo de 7:00 a.m. a 8:00 p.m.</p>
+        </footer>
+    </form>
+</body>
+</html>

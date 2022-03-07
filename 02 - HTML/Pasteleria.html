@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastilaxia</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 50%;
+            height: 450px;
+            /* only for demonstration, should be removed */
+            background: rgb(129, 179, 226);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 50%;
+            background-color: #9cd5f0;
+            height: 450px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./assets/img/Logomundo.png" alt="Pastilaxia" width="150px">
+      
+        <h1>Bienvenidos a Pastilaxia</h1>
+    </header>
+   
+    <section>
+        <nav>
+    
+            <h2>Pasteles con sabores de otro planeta</h2>
+
+            <p>Pastel de chocolate .................... $150.00 <img src="./assets/img/chocolate.jpg" alt="Pastel de chocolate" width="50px"></p>
+            <p>Pastel de queso......................... $140.00 <img src="./assets/img/queso.jpg" alt="Pastel de queso" width="50px"></p>
+            <p>Pastel chocoflan........................ $180.00 <img src="./assets/img/chocoflan.jpg" alt="Pastel de chocoflan" width="50px"></p>
+            <p>Pastel envinado......................... $200.00 <img src="./assets/img/envinado.jpg" alt="Pastel envinado" width="50px"></p>
+            <p>Pastel de fresas....................... $160.00 <img src="./assets/img/fresa.jpg" alt="Pastel de fresas" width="50px"></p>
+            <p>Pastel de tres leches................... $150.00 <img src="./assets/img/tres.jpg" alt="Pastel de tres leches" width="50px"></p>
+
+        </nav>
+    
+        <article>
+        <h2>Adornos</h2>
+
+            <ul>
+                <li>Fruta.............................. $20.00 <img src="./assets/img/fruta.jpg" alt="Fruta" width="50px"></li>
+                <li>Brillo comestible.................. $10.00 <img src="./assets/img/brillo.jpg" alt="Brillo" width="50px"></li>
+                <li>Fondan..............................$15.00 <img src="./assets/img/fondan.jpg" alt="Fondan" width="50px"></li>
+                <li>Trufas..............................$30.00 <img src="./assets/img/trufas.jpg" alt="Trufas" width="50px"></li>
+                <li>Confitería..........................$10.00 <img src="./assets/img/confiteria.jpg" alt="Confiteria" width="50px"></li>
+                <li>Chantilly...........................$25.00 <img src="./assets/img/chantilly.jpg" alt="Chantilly" width="50px"></li>
+            </ul>
+
+        </article>
+    
+    </section>
+    <footer>
+        <a href="./pedidoPasteleria.html">
+            <input type="button" value="Hacer pedido">
+        </a>
+        <br><br>
+        <p>Dirección: Calle Saturno, Número 2000, Colonia Sistema Solar, Alcaldía Galaxia</p>
+        <p>Número: (55) 1234-9876</p>
+        <p>Horarios de atención: Lunes a Domingo de 7:00 a.m. a 8:00 p.m.</p>
+    </footer>    
+</body>
+</html>
